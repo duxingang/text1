@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+<style>
+
+	body{
+		background: #000;
+		overflow: hidden;
+	}
+	.rain{
+		width: 2px;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		filter: blur(2px);
+		transition: all 1s ease;
+		background: #fff;
+	}
+</style>
+
+<script>
+
+	let num = 300;
+	let rain = [];
+	for(let i = 0; i < num; i++){
+		let divs = document.createElement('div');
+		divs.classList.add('rain')
+		let lefts = (window.innerWidth+200)*Math.random()-100;
+		let tops = 50*Math.random();
+		divs.style.left = `${lefts}px`;
+		divs.style.top = `${-tops-2}px`;
+		rain.push(divs);
+		document.body.appendChild(divs);
+	}
+	window.onclick = function(){
+		rain.forEach(element=>{
+			element.style.transitionDelay = `${Math.random()*2}s`;
+			element.style.top = `${innerHeight+50}px`;
+
+			element.addEventListener('webkitTransitionEnd',()=>{
+			element.style.transition = 'none';
+			element.style.top = '-50px';
+
+			setTimeout(function(){
+				element.style.transition = `all 1s ease ${Math.random()*2}s`;
+				element.style.top = `${innerHeight+50}px`;
+				},1);	
+			})
+		});
+		
+	}
+
+</script>

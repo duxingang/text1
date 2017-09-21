@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	:root{
+		background: #ccc;
+	}
+	.big{
+		width: 800px;
+		height: 502px;
+		margin: 50px auto;
+	}
+	.left{
+		width: 450px;
+		height: 500px;
+		float: left;
+		border: 1px solid #333333;
+		overflow: hidden;
+		background: #fff;
+		border-radius: 10px;
+	}
+	.right{
+		width: 280px;
+		height: 500px;
+		float: right;
+		background: white;
+		overflow: hidden;
+		padding-left: 10px;
+		border: 1px solid #333333;
+		border-radius: 10px;
+	}
+	.left li{
+		width: 100%;
+		height: 85px;
+		margin-top: 13px;	
+	}
+	.left li img{
+		display: block;
+		width: 80px;
+		height: 80px;
+		background: #ccc;
+		float: left;
+		margin-right: 10px;
+		border-radius: 10px;
+	}
+	.l-right{
+		width: calc(100% - 90px);
+		float: left;
+		height: 80px;
+		background: #ccc;
+		box-sizing: border-box;
+		border-radius: 10px;
+	}
+	.l-right h3{
+		width: 100%;
+		height: 30px;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.l-right p{
+		width: 100%;
+		height: 40px;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
+	.user{
+		width: 160px;
+		height: 30px;
+		border-radius: 3px;
+		outline: none;
+		margin-top: 80px;
+		margin-bottom: 30px;
+	}
+	textarea{
+		width: 240px;
+		height: 200px;
+		resize: none;
+	}
+	.rest{
+		width: 100%;
+		height: 15px;
+		font-size: 11px;
+		line-height: 15px;
+	}
+	.rest span{
+		color: red;
+	}
+	.btn{
+		width: 240px;
+		height: 25px;
+		margin-top: 10px;
+		background: #ccc;
+		cursor: pointer;
+	}
+</style>
+<body>
+	<div class="big">
+		<ul class="left">
+			<li>
+				<img src="" alt="">
+				<div class="l-right">
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<img src="" alt="">
+				<div class="l-right">
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<img src="" alt="">
+				<div class="l-right">
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<img src="" alt="">
+				<div class="l-right">
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+			<li>
+				<img src="" alt="">
+				<div class="l-right">
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+		</ul>
+		<div class="right">
+			<label for="">姓名:</label>
+			<input type="text" placeholder="请输入姓名" class="user"><br>
+			<label for="">留言区:</label><br>
+			<textarea name="" id="" cols="30" rows="10" maxlength="120" placeholder="请输入内容..."></textarea><br>
+			<div class="rest">剩余<span>120</span>字</div>
+			<button class="btn">提交</button>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	window.onload = function(){
+		let num = 120;
+		let text = document.querySelector('textarea')
+		let span = document.querySelector('.rest span')
+		let box = document.querySelector('.left')
+		let btn = document.querySelector('.btn')
+		let name = document.querySelector('.user')
+		text.onkeyup = function(){
+			let length = text.value.length;
+			span.innerText = `${num-length}`
+		}
+		text.onkeydown = function(){
+			btn.onclick = function(){
+				if(text.value == ''){
+					alert('你倒是输入啊！')
+					return;
+				}
+				let use = name.value;
+				name.value = '';
+				let val = text.value;
+				text.value = '';
+				let newli = document.createElement('li');
+				newli.innerHTML = `
+					<img src="8.jpg" alt="">
+					<div class="l-right">
+						<h3>${use}</h3>
+						<p>${val}</p>
+					</div>
+				`
+				box.firstAppend(newli);
+			}
+		}
+		HTMLElement.prototype.firstAppend = function(nNode){
+			let first = this.firstElementChild;
+			if(first){
+				this.insertBefore(nNode,first)
+			}else{
+				this.appendChild(nNode)
+			}
+		}
+	}
+</script>

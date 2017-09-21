@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_401714_xekdq167sibmlsor.eot');
+  src: url('http://at.alicdn.com/t/font_401714_xekdq167sibmlsor.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_401714_xekdq167sibmlsor.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_401714_xekdq167sibmlsor.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_401714_xekdq167sibmlsor.svg#iconfont') format('svg');
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-user-select: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+main{
+	width: 80%;
+	height: 85%;
+	margin: 30px auto;
+	position: relative;
+	background: #947;
+	border-radius: 10px;
+}
+.top{
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	padding-top: 20px;
+	overflow: hidden;
+}
+.top .top-left{
+	width: 300px;
+	height: 300px;
+	margin-left: 150px;
+	margin-top: 50px;
+	float: left;
+	background: #a2a2a2;
+	opacity: 0.8;
+}
+.top .top-left .top-left-top{
+	width: 280px;
+	height: 280px;
+	background: #0e0e0e;
+	border-radius: 50%;
+	margin: 10px auto;
+}
+.top .top-left .four{
+	width: 300px;
+	height: 25px;
+	margin: 20px auto;
+	cursor: pointer;
+}
+.top .top-left .four li{
+	width: 66px;
+	height: 100%;
+	margin-right: 10px;
+	float: left;
+	font-family: "iconfont";
+}
+.top .top-left .four li:nth-child(4){
+	margin-right: 0;
+}
+.top .top-left .four li span{
+	display: block;
+	line-height: 25px;
+	float: left;
+	margin-left: 6px;
+}
+.top .top-left .four li p{
+	float: left;
+}
+.top .top-right{
+	width: 350px;
+	height: 350px;
+	margin-left: 100px;
+	margin-top: 50px;
+	float: left;
+}
+.song,.singer{
+	width: 100%;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+.song{
+	font-weight: bold;
+}
+.singer{
+	font-size: 15px;
+}
+.top ul{
+	width: 100%;
+	height: 350px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.top ul li{
+	width: 100%;
+	height: 25px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+}
+.bottom{
+	width: 950px;
+	height: 80px;
+	margin: 30px auto;
+	background: rgba(255, 255, 255, 0.1);
+}
+.photo{
+	width: 80px;
+	height: 80px;
+	float: left;
+	background-size: cover;
+	border-radius: 50%;
+}
+.photo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.pre,.pause,.next{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 10px;
+	font-family: 'iconfont';
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 15px;
+}
+.pre:hover,.pause:hover,.next:hover{
+	color: #947;
+}
+.jindu{
+	width: 350px;
+	height: 5px;
+	border-radius: 3px;
+	background: white;
+	margin-top: 45px;
+}
+.big{
+	width: 350px;
+	height: 100%;
+	float: left;
+	margin-left: 20px;
+}
+.name{
+	width: 120px;
+	height: 20px;
+	font-size: 10px;
+	color: white;
+	float: left;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.time{
+	width: 120px;
+	height: 20px;
+	font-size: 10px;
+	color: white;
+	float: right;
+	line-height: 20px;
+	margin-top: 20px;
+	text-align: right;
+}
+.jin{
+	width: 0;
+	height: 100%;
+	background: #947;
+	border-radius: 2px;
+}
+.box{
+	width: 110px;
+	height: 30px;
+	margin-top: 25px;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 20px;
+}
+.box li{
+	width: 30px;
+	height: 100%;
+	font-size: 23px;
+	line-height: 30px;
+	text-align: center;
+	color: #dddddd;
+	font-family: 'iconfont';
+	cursor: pointer;
+}
+.box li:hover{
+	color: #947;
+}
+.yinliang{
+	width: 140px;
+	height: 30px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 20px;
+}
+.left{
+	width: 30px;
+	height: 100%;
+	float: left;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+	font-family: 'iconfont'
+}
+.right{
+	width: 110px;
+	height: 4px;
+	margin-top: 13px;
+	float: left;
+	background: white;
+	position: relative;
+}
+.voice{
+	width: 20px;
+	height: 4px;
+	background: #947;
+}
+.voc{
+	width: 14px;
+	height: 14px;
+	background: #947;
+	position: absolute;
+	left: 20px;
+	top: -5px;
+	border-radius: 50%;
+}

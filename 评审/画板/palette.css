@@ -1,0 +1,154 @@
+/*
+* @Author: VAIO
+* @Date:   2017-08-28 18:27:16
+* @Last Modified by:   VAIO
+* @Last Modified time: 2017-09-20 11:13:28
+*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_398842_wyxbmt640z7x2yb9.eot');
+  src: url('http://at.alicdn.com/t/font_398842_wyxbmt640z7x2yb9.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_398842_wyxbmt640z7x2yb9.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_398842_wyxbmt640z7x2yb9.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_398842_wyxbmt640z7x2yb9.svg#iconfont') format('svg');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-user-select: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box{
+	width: 1000px;
+	height: 600px;
+	border: 2px solid #a2a2a2;
+	margin: 20px auto;
+	position: relative;
+}
+.left{
+	width: 130px;
+	height: 100%;
+	background: #978;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-right: 2px solid white;
+	box-sizing: border-box;
+}
+.left label{
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.iconfont{
+	font-family: 'iconfont';
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+}
+.left label:nth-of-type(2n+1){
+	margin-left: 20px;
+}
+.left label:nth-of-type(10) input{
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+}
+.left .toolss input{
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: none;
+}
+.yangshi{
+	height: 190px;
+}
+.left1{
+	display: block;
+	margin-left: 46px;
+	margin-top: 80px;
+	color: white;
+}
+.left2{
+	display: block;
+	margin-left: 46px;
+	margin-top: 2px;
+	color: white;
+}
+.wenzi{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+}
+.right{
+	height: 100%;
+	position: absolute;
+	right: 0;
+	left: 130px;
+}
+.right>.top{
+	height: 90px;
+	width: 100%;
+	background: #978;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.right>.bottom{
+	width: 100%;
+	position: absolute;
+	top: 90px;
+	bottom: 0;
+}
+.eraser{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid red;
+	display: none;
+}
+.mask{
+	width: 875px;
+	height: 510px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.baocun{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	float: left;
+}
+.reverse{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	float: left;
+}
+.clip{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px dashed black;
+}

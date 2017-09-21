@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.start{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: #ff6700;
+	margin: 230px auto;
+	color: black;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 150px;
+	cursor: pointer;
+}
+.box{
+	width: 50px;
+	height: 50px;
+	background: no-repeat center/contain;
+	color: rgba(0,0,0,0);
+	font-size: 0;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+	line-height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.big{
+	width: 100px;
+	height: 60px;
+	background: green;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	border-radius: 10px;
+	text-align: center;
+}
+.score,.health{
+	color: white;
+}
+.score{
+	margin-top: 5px;
+}
+span{
+	color: white;
+	padding-left: 10px;
+}

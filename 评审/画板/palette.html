@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画板</title>
+	<link rel="stylesheet" href="palette.css">
+	<script src="palette.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="left">
+		  <span class="left1">样式</span>
+		  <div class="yangshi">
+			<label for="" class="iconfont tools" id="pen" active="true">&#xe62b;</label>
+			<label for="" class="iconfont tools" id="dash" contenteditable="true">&#xe672;</label>
+			<label for="" class="iconfont tools" id="four">&#xe604;</label>
+			<label for="" class="iconfont tools" id="line">&#xe6f3;</label>	
+			<label for="" class="iconfont tools" id="circle">&#xe61a;</label>
+			<label for="" class="iconfont tools" id="njiao">&#xe603;</label>
+			<label for="" class="iconfont tools" id="more">&#xe677;</label>
+		  </div>
+		  <span class="left2">工具</span>
+		  <div class="toolss">	  	
+		  	<label class="style" id="stroke">描</label>
+			<label>
+				<input type="color">
+			</label>
+			<label class="style" id="fill">填</label>
+			<label>
+				<input type="color">
+			</label>
+			<label class="iconfont xiang">&#xe77b;</label>
+			<label class="wenzi">T</label>
+			<label class="iconfont clips">&#xe67f;</label>
+		  </div>
+		</div>
+		<div class="right">
+			<div class="top">
+				<a href="" class="baocun">存</a>
+				<a href="" class="reverse">反</a>
+			</div>	
+			<div class="bottom">
+				<canvas width="875" height="510"></canvas>
+				<div class="eraser"></div>
+				<div class="clip"></div>
+				<div class="mask"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
