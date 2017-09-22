@@ -1,0 +1,215 @@
+/*
+* @Author: VAIO
+* @Date:   2017-07-20 23:09:20
+* @Last Modified by:   VAIO
+* @Last Modified time: 2017-07-21 14:49:36
+*/
+
+*{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+:root{
+    background: #f5f6fa;
+}
+header{
+	width: 100%;
+	height: 0.92rem;
+	background: #0078e6;
+	position: relative;
+	z-index: 999;
+}
+.header-left img{
+    width: 0.71rem;
+    height: 0.67rem;
+    position: absolute;
+    top: 0.13rem;
+    left: 2.6rem;
+}
+.header-right{
+	color: white;
+	font-size: 0.34rem;
+	position: absolute;
+    top: 0.26rem;
+    left: 3.5rem;
+}
+.banner{
+	width: 100%;
+	height: 2.8rem;
+	background: pink;
+}
+.banner img{
+	width: 100%;
+	height: 2.8rem;
+}
+nav{
+	width: 100%;
+	height: 4.9rem;
+	background: #f3f4f8;
+}
+nav ul li{
+	width: 1.55rem;
+	height: 1.55rem;
+	background: #f3f4f8;
+	float: left;
+	margin-right: 0.3rem;
+	margin-top: 0.3rem;
+	position: relative;
+}
+nav .n1,.n5{
+    margin-left: 0.2rem;
+}
+nav .n4,.n8{
+    margin-right: 0.2rem;
+}
+nav .n5,.n6,.n7,.n8{
+    margin-top: 0.7rem;
+}
+nav ul li img{
+	width: 100%;
+	height: 100%;
+}
+nav ul li a div{
+	color: black;
+	font-size: 0.19rem;
+	text-align: center;
+}
+.fwyipai{
+	width: 100%;
+	height: 0.63rem;
+	background: #ffffff;
+	border-bottom: 0.01rem solid #e8e8e8;
+	color: #0377bc;
+	text-align: center;
+	font-size: 0.22rem;
+	line-height: 0.63rem;
+}
+.fwxia1{
+	width: 100%;
+	height: 2.16rem;
+	border-bottom: 0.01rem solid #e8e8e8;
+}
+.fwxia1 ul li{
+	width: 3.74rem;
+	height: 2.16rem;
+	background: #ffffff;
+	float: left;
+}
+.fwxia1 .xiatu1{
+	border-right: 0.01rem solid #e8e8e8;
+	box-sizing: border-box;
+	position: relative;
+}
+.dazi{
+	font-size: 0.23rem;
+	color: black;
+	margin-left: 0.16rem;
+	margin-top: 0.38rem;
+}
+.xiaozi{
+	font-size: 0.17rem;
+	color: #999999;
+	margin-left: 0.16rem;
+    margin-top: 0.18rem;
+}
+.fwxia1 ul li img{
+    width: 1.32rem;
+    height: 1.32rem;
+    position: absolute;
+    top: 0.44rem;
+    right: 0.38rem;
+}
+.fwxia1 .xiatu2{
+	position: relative;
+}
+.fwxia2{
+	width: 100%;
+	height: 1.38rem;
+	background: white;
+	border-bottom: 0.01rem solid #e8e8e8;
+	margin-bottom: 0.2rem;
+}
+.fwxia2 ul li{
+	width: 2.5rem;
+	height: 1.38rem;
+	background: #ffffff;
+	float: left;
+}
+.fwxia2 .xiatu1{
+	border-right: 0.01rem solid #e8e8e8;
+	box-sizing: border-box;
+	position: relative;
+}
+.fwxia2 .xiatu2{
+	border-right: 0.01rem solid #e8e8e8;
+	box-sizing: border-box;
+	position: relative;
+}
+.fwxia2 .xiatu3{
+	position: relative;
+}
+.fwxia2 ul li img{
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    top: 0.39rem;
+    left: 0.20rem;
+}
+.fwxia2 .dazi{
+	font-size: 0.23rem;
+	color: black;
+	margin-left: 0.9rem;
+	margin-top: 0.39rem;
+}
+.xiaozi3,.xiaozi4,.xiaozi5{
+	font-size: 0.05rem;
+	color: #999999;
+	margin-left: 1rem;
+    margin-top: 0.18rem;
+}
+footer{
+	width: 100%;
+	height: 0.8rem;
+	background: white;
+	position: relative;
+}
+footer ul li{
+	font-size: 0.23rem;
+	color: black;
+    float: left;
+    line-height: 0.8rem;
+}
+.huang{
+	position: absolute;
+	width: 2.37rem;
+	height: 0.8rem;
+	background: #ff7e00;
+	border-radius: 9%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	color: white;
+    font-weight: bold;
+}
+.huang span{
+	margin-left: 0.38rem;	
+}
+.zuidi{
+	width: 100%;
+	height: 0.4rem;
+	position: absolute;
+	bottom: -0.4rem;
+}
+.dizi1{
+	margin-left: 0.2rem;
+	color: black;
+}
+.dizi2{
+	position: absolute;
+	right: 0.2rem;
+	color: black;
+}
